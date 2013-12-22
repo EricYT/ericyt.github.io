@@ -11,9 +11,9 @@ pygments: true
 title : Never stop debugging
 tagline: Head of Fish
 author : 
-  name : Tao Yu
+  name : 
   email : eric.yu@gmail.com
-  github : www.github.com/EricYT
+  github : EricYT
   twitter : username
   feedburner : feedname
 
@@ -80,16 +80,16 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : disqus
+    provider : 
     disqus :
-      short_name : jekyllbootstrap
+      short_name : eric's blog
     livefyre :
       site_id : 123
     intensedebate :
-      account : 123abc
+      account : ericyu
     facebook :
       appid : 123
-      num_posts: 5
+      num_posts: 2
       width: 580
       colorscheme: light
    
@@ -115,7 +115,7 @@ JB :
   # Set 'provider' to false to turn sharing off globally.
   #
   sharing :
-    provider : false
+    provider : true
     
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
