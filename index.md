@@ -1,27 +1,18 @@
 ---
 layout: page
-title: Hello World!
+title: The home page
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+我的github [ericyt.github.io](http://ericyt.github.io)
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
 
-## Update Author Attributes
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+## About
 
-The theme should reference these variables whenever needed.
+这是我的第一个个人blog，瞎捣腾了几天，却终究是没有弄得透彻。如今也只能是摸着石头过河，
+抑或按图索骥。
     
 ## Sample Posts
 
