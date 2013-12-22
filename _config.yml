@@ -8,10 +8,10 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Never stop debugging
+title : Never Stop Debugging
 tagline: Head of Fish
 author : 
-  name : 
+  name : Eric
   email : eric.yu@gmail.com
   github : EricYT
   twitter : username
