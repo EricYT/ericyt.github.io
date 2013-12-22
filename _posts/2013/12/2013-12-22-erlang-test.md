@@ -1,7 +1,7 @@
 ---
-layout: page
-title: test
-tagline: Supporting tagline
+layout: post
+category : Erlang
+tags : [code, erlang]
 ---
 
 
