@@ -24,4 +24,9 @@ descriptions : A lesson for building a github page
 
 1. 一个Github账户，并且在你的Github上创建一个类似 *`USERNAME.github.io`*;
 2. 在本地Git上登录你的用户，并且将1中的项目clone到本地；
-3. 
+
+
+<?prettify?>
+<pre class="prettyprint">
+select * from table
+</pre>
