@@ -34,6 +34,7 @@ descriptions : ETS data manager
 
 首先会将其**`file:read_file`**出来，将其二进制内容使用计算其md5值，基本操作如下：
 
+
     get_md5_data() ->
      case file:read_file(FileName) of
       {ok, ConfigData} ->
@@ -60,6 +61,7 @@ descriptions : ETS data manager
      $0 + N;
     hex(N) when N >= 10, N < 16 ->
      $a + N.
+
 
 但是为何要将md5值转换为16进制的呢？存储这样一个值的目的在于如果数据发生变化后可以根据新生成的文件的md5判断两个版本是否不一样，从而进行数据的更新。而不至于通过使用文件的比对来判断是否发生了变化。
 整个数据会在ets中存储一份，ets为bug类型。

@@ -28,5 +28,5 @@ descriptions : A lesson for building a github page
 
 <?prettify?>
 <pre class="prettyprint">
-select * from table
+-module(test).
 </pre>
