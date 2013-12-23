@@ -17,7 +17,8 @@ tagline: Supporting tagline
 ## About this blog
 
 这个blog是基于Github搭建起来的，使用的是jekyll。由于对web的认识十分有限，导致这
-一过程变得如此的艰难，有好几次都想放弃。但终究还是厚着脸皮的坚持到了现在。
+一过程变得如此的艰难，  
+有好几次都想放弃。但终究还是厚着脸皮的坚持到了现在。
 
 这个blog会囊括一些没事时瞎YY的文字，还有就是我的本职工作，coder。
 
