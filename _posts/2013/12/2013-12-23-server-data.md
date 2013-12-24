@@ -34,34 +34,35 @@ descriptions : ETS data manager
 
 首先会将其**`file:read_file`**出来，将其二进制内容使用计算其md5值，基本操作如下：
 
+<?prettify?>
+<pre class="prettyprint linenums">
+get_md5_data() -&gt;
+ case file:read_file(FileName) of
+  {ok, ConfigData} -&gt;
+   ok;
+  _ -&gt;
+   %% error read file
+   ConfigData = &lt;&lt;&gt;&gt;
+   do_some_log
+ end,
+ md5_hex(ConfigData).
 
-    get_md5_data() ->
-     case file:read_file(FileName) of
-      {ok, ConfigData} ->
-       ok;
-      _ ->
-       %% error read file
-       ConfigData = <<>>
-       do_some_log
-     end,
-     md5_hex(ConfigData).
-    
-    md5_hex(S) ->
-     Md5_bin = erlang:md5(S),
-     Md5_list = erlang:binary_to_list(Md5_bin),
-     lists:flatten(list_to_hex(Md5_list)).
-    
-    list_to_hex(L) ->
-     lists:map(fun(X) -> int_to_hex(X) end, L).
-    
-    int_to_hex(N) when N < 256 ->
-     [hex(N div 16), hex(N rem 16].
-    
-    hex(N) when N < 10 ->
-     $0 + N;
-    hex(N) when N >= 10, N < 16 ->
-     $a + N.
+md5_hex(S) -&gt;
+ Md5_bin = erlang:md5(S),
+ Md5_list = erlang:binary_to_list(Md5_bin),
+ lists:flatten(list_to_hex(Md5_list)).
 
+list_to_hex(L) -&gt;
+ lists:map(fun(X) -&gt; int_to_hex(X) end, L).
+
+int_to_hex(N) when N &lt; 256 -&gt;
+ [hex(N div 16), hex(N rem 16].
+
+hex(N) when N &lt; 10 -&gt;
+ $0 + N;
+hex(N) when N &gt;&wq; 10, N &lt; 16 -&gt;
+ $a + N.
+</pre>
 
 但是为何要将md5值转换为16进制的呢？存储这样一个值的目的在于如果数据发生变化后可以根据新生成的文件的md5判断两个版本是否不一样，从而进行数据的更新。而不至于通过使用文件的比对来判断是否发生了变化。
 整个数据会在ets中存储一份，ets为bug类型。
