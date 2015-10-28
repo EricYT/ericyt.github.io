@@ -9,12 +9,12 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Never Stop Debugging
-tagline: Head of Fish
-author : 
+tagline: The winter is coming
+author : taoyu
   name : Eric
   email : eric.yu@gmail.com
   github : EricYT
-  twitter : username
+  twitter : EricYutao
   feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
